@@ -1,0 +1,8 @@
+export enum Roles {
+    ROLE_ADMIN = 0,
+    ROLE_EXPORTER_BANK,
+    ROLE_FINANCING_BANK,
+    ROLE_SECURITY_AGENT,
+    ROLE_DATA_MINER,
+    ROLE_EXPORTER,
+}

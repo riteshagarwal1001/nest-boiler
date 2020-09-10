@@ -1,0 +1,9 @@
+--  have below fields in  logs table
+-- CURRENT_TIMESTAMP AT TIME ZONE 'UTC',
+--        sp_name, 
+ --       params,
+  --      sql_state,
+    --    message,
+      --  detail,
+       -- hint,
+        -- context
