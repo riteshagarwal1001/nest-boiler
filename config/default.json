@@ -1,0 +1,74 @@
+{
+    "env": "LOCAL",
+
+    "baseUrl": "http://localhost:8000/",
+    "server": {
+        "port": 9912,
+        "httpEnabled": true,
+        "pollingEnabled": false,
+        "securityEnabled": true
+    },
+    "mongodb": {
+        "url": "mongodb://localhost:27017/il35"
+    },
+
+    "jwtConstants": {
+        "secret": "secretKey",
+
+        "forgotPasswordTokenSecretKey": "secretKey2",
+
+        "forgotPasswordTokenExpiresIn": 3600000,
+
+        "expiresIn": "60000000s",
+
+        "saltRounds": 10
+    },
+
+    "logOutError": {
+        "error": "No access For resource",
+
+        "code": 401
+    },
+
+    "logging": {
+        "s3LoggingEnabled": false
+    },
+
+    "s3LoggingConfig": {
+        "bucket": "ildevlogs",
+
+        "folder": "logs-dev",
+
+        "rotate_every": "day",
+
+        "upload_every": 20000,
+
+        "buffer_size": 100000000,
+
+        "tags": {
+            "project": "il"
+        },
+
+        "name_format": "%d-%m-%Y-%H-%M-%S-%L-IL.log"
+    },
+
+    "aws": {
+        "accessKeyId": "aaaa",
+
+        "secretAccessKey": "aaa",
+
+        "region": "us-east-1"
+    },
+    "SENDGRID_API_KEY": "aa",
+
+    "senderEmail": "Interlinkages Team <interlinkagesteam@inter-linkages.com>",
+    "ocr": {
+        "accessKeyId": "aa",
+        "secretAccessKey": "aa",
+        "region": "us-east-1",
+        "accountId": "aaaaaa",
+        "queueName": "ocr",
+        "apiVersion": "2012-11-05",
+        "s3bucket": "bnbnhh"
+    }
+}
